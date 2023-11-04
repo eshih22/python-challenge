@@ -57,8 +57,9 @@ print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {max_date} (${max(profit_list)})")
 print(f"Greatest Decrease in Profits: {min_date} (${min(profit_list)})")
 
+output_path = os.path.join("analysis", "main.txt")
 
-with open ("main.txt", "w") as file:
+with open (output_path, "w") as file:
     file.write("Financial Analysis" + "\n")
     file.write("---------------------------------" + "\n")
     file.write(f"Total Months: {len(date)} \n")
